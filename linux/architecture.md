@@ -167,6 +167,22 @@ renice [-n] priority [-g|-p|-u] identifier...
 
 The signals SIGKILL and SIGSTOP cannot be caught, blocked, or ignored.
 
+# Background execution
+
+```
+tar -zcvf hashcat.zip hashcat-6.0.0/
+tar -zcvf hashcat.zip hashcat-6.0.0/ &
+tar -zcvf hashcat.zip hashcat-6.0.0/ > text &
+```
+
+# Redirecting output
+|                     |                      |
+|---------------------|----------------------|
+| `ls > file`         | write to file        |
+| `ls >> file`        | append to file       |
+| `ls 1>file 2>error` | writing errors to a specific file |
+| `ls 1>file 2>&1`    | writing output and errors to a single file |
+
 # Links
 [Linux Performance Tuning](https://gist.github.com/VitaliySid/e81a06d5158f199859b1b8b34a8d688b)  
 [Systemctl documentation](https://www.freedesktop.org/software/systemd/man/systemctl.html)  
