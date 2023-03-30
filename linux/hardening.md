@@ -142,7 +142,7 @@ Example:
 Example:  
 `sudo nano /etc/pam.d/common-auth` - limiting login attempts  
 
-![](/pic/pam.png)
+![](pic/pam.png)
 
 ### Directory encryption
 eCryptfs - an enterprise-class cryptographic filesystem for linux  
